@@ -30,7 +30,7 @@ class ExampleSteps extends ScalaDsl with EN {
   }
   */
 
-  Given("""^I have navigated to google$""") { () =>
+  Given("""^I have navigated to dev environment$""") { () =>
     driver.navigate().to("###TOKEN_FULL_SITE_ADDRESS###")
   }
   Then("""^the page title should be "(.*?)"$""") { (title: String) =>
