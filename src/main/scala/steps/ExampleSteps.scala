@@ -15,7 +15,7 @@ class ExampleSteps extends ScalaDsl with EN {
   //private val log = LoggerFactory.getLogger(classOf[ExampleSteps])
 
   val capability = DesiredCapabilities.chrome()
-  val driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability)
+  val driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), capability)
 
   val fluentWait: Wait[WebDriver] = new FluentWait[WebDriver](driver)
     .withTimeout(6, TimeUnit.SECONDS)
@@ -31,7 +31,7 @@ class ExampleSteps extends ScalaDsl with EN {
   */
 
   Given("""^I have navigated to google$""") { () =>
-    driver.navigate().to("http://www.google.com")
+    driver.navigate().to(###TOKEN_FULL_SITE_ADDRESS###)
   }
   Then("""^the page title should be "(.*?)"$""") { (title: String) =>
     fluentWait.until(ExpectedConditions.titleIs(title))

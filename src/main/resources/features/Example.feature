@@ -5,6 +5,6 @@ Feature: Example feature
   So that I can create BDD style tests.
 
   @ExampleFeature
-  Scenario: Google search, using selenium
-    Given I have navigated to google
-    Then the page title should be "Google"
+  Scenario: Open dev environment, using selenium
+    Given I have navigated to dev environment
+    Then the page title should be "Laravel"
