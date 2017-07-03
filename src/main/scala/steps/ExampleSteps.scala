@@ -31,7 +31,7 @@ class ExampleSteps extends ScalaDsl with EN {
   */
 
   Given("""^I have navigated to google$""") { () =>
-    driver.navigate().to(###TOKEN_FULL_SITE_ADDRESS###)
+    driver.navigate().to("###TOKEN_FULL_SITE_ADDRESS###")
   }
   Then("""^the page title should be "(.*?)"$""") { (title: String) =>
     fluentWait.until(ExpectedConditions.titleIs(title))
