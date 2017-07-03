@@ -2,6 +2,7 @@ package steps
 
 import java.util.concurrent.TimeUnit
 import java.net.URL
+import java.lang.Object
 
 import cucumber.api.scala.{EN, ScalaDsl}
 import org.openqa.selenium.support.ui.{ExpectedConditions, FluentWait, Wait}
