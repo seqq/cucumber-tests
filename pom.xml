@@ -11,6 +11,8 @@
     <properties>
         <scala.version>2.11.7</scala.version>
         <cucumber.version>1.2.4</cucumber.version>
+        <selenium.version>3.4.0</selenium.version>
+        <scalatest.version>3.0.1</scalatest.version>
     </properties>
 
     <dependencies>
@@ -54,12 +56,12 @@
 	<dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.4.0</version>
+            <version>${selenium.version}</version>
         </dependency>
 	<dependency>
             <groupId>org.scalatest</groupId>
             <artifactId>scalatest_2.11</artifactId>
-            <version>3.0.1</version>
+            <version>${scalatest.version}</version>
         </dependency>
     </dependencies>
     <build>
