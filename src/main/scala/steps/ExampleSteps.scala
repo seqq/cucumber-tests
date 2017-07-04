@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.{ExpectedConditions, FluentWait, Wait}
 import org.openqa.selenium.{By, WebDriver}
 import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.remote.RemoteWebDriver
-import org.scalatest.Matchers
 
 class ExampleSteps extends ScalaDsl with EN {
   //private val log = LoggerFactory.getLogger(classOf[ExampleSteps])
