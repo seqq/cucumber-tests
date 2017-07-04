@@ -11,7 +11,7 @@
     <properties>
         <scala.version>2.11.7</scala.version>
         <cucumber.version>1.2.4</cucumber.version>
-        <selenium.version>3.4.0</selenium.version>
+<!--         <selenium.version>3.4.0</selenium.version> -->
     </properties>
 
     <dependencies>
