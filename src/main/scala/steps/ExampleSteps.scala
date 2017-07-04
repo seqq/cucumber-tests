@@ -5,10 +5,10 @@ import java.net.URL
 import java.lang.Object
 
 import cucumber.api.scala.{EN, ScalaDsl}
-import org.openqa.selenium.support.ui.{ExpectedConditions, FluentWait, Wait}
-import org.openqa.selenium.{By, WebDriver}
-import org.openqa.selenium.remote.DesiredCapabilities
-import org.openqa.selenium.remote.RemoteWebDriver
+// import org.openqa.selenium.support.ui.{ExpectedConditions, FluentWait, Wait}
+// import org.openqa.selenium.{By, WebDriver}
+// import org.openqa.selenium.remote.DesiredCapabilities
+// import org.openqa.selenium.remote.RemoteWebDriver
 
 class ExampleSteps extends ScalaDsl with EN {
 
