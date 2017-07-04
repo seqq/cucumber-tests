@@ -11,7 +11,6 @@ import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.remote.RemoteWebDriver
 
 class ExampleSteps extends ScalaDsl with EN {
-  //private val log = LoggerFactory.getLogger(classOf[ExampleSteps])
 
   val capability = DesiredCapabilities.chrome()
   val driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), capability)
@@ -19,16 +18,7 @@ class ExampleSteps extends ScalaDsl with EN {
   val fluentWait: Wait[WebDriver] = new FluentWait[WebDriver](driver)
     .withTimeout(6, TimeUnit.SECONDS)
     .pollingEvery(1, TimeUnit.SECONDS)
-
-  /*
-  Before { scenario =>
-    log.info("Before...")
-  }
-  After { scenario =>
-    log.info("...After")
-  }
-  */
-
+  
   Given("""^I have navigated to dev environment$""") { () =>
     driver.navigate().to("###TOKEN_FULL_SITE_ADDRESS###")
   }
