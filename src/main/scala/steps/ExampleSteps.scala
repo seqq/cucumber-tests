@@ -12,17 +12,17 @@ import cucumber.api.scala.{EN, ScalaDsl}
 
 class ExampleSteps extends ScalaDsl with EN {
 
-  val capability = DesiredCapabilities.chrome()
-  val driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), capability)
+//   val capability = DesiredCapabilities.chrome()
+//   val driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), capability)
 
-  val fluentWait: Wait[WebDriver] = new FluentWait[WebDriver](driver)
-    .withTimeout(6, TimeUnit.SECONDS)
-    .pollingEvery(1, TimeUnit.SECONDS)
+//   val fluentWait: Wait[WebDriver] = new FluentWait[WebDriver](driver)
+//     .withTimeout(6, TimeUnit.SECONDS)
+//     .pollingEvery(1, TimeUnit.SECONDS)
   
-  Given("""^I have navigated to dev environment$""") { () =>
-    driver.navigate().to("###TOKEN_FULL_SITE_ADDRESS###")
-  }
-  Then("""^the page title should be "(.*?)"$""") { (title: String) =>
-    fluentWait.until(ExpectedConditions.titleIs(title))
-  }
+//   Given("""^I have navigated to dev environment$""") { () =>
+//     driver.navigate().to("###TOKEN_FULL_SITE_ADDRESS###")
+//   }
+//   Then("""^the page title should be "(.*?)"$""") { (title: String) =>
+//     fluentWait.until(ExpectedConditions.titleIs(title))
+//   }
 }
